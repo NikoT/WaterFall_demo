@@ -13,6 +13,12 @@
     NSMutableArray *volumeArr;
     
     float imageViewWedth;
+    
+    NSMutableArray *waterfallArr;
+    
+    NSMutableArray *showedImageArr;
+    NSMutableArray *cacheArr;
+    
 }
 - (void)addWaterfallImages:(NSArray*)imageArr;
 @end

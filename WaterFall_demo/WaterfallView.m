@@ -8,7 +8,7 @@
 
 #import "WaterfallView.h"
 
-#define VOLUME_NUM 2
+#define VOLUME_NUM 3
 #define VOLUME_OFFSET 4
 #define LINE_OFFSET 3
 
@@ -19,6 +19,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        waterfallArr = [[NSMutableArray alloc]init];
+        showedImageArr = [[NSMutableArray alloc]init];
         volumeArr = [[NSMutableArray alloc]initWithCapacity:VOLUME_NUM];
         for (int i = 0; i<VOLUME_NUM; i++) {
             [volumeArr addObject:[NSNumber numberWithInt:0]];
@@ -31,7 +33,6 @@
 
 - (void)addWaterfallImages:(NSArray*)imageArr{
     if (imageArr) {
-
         
         for (UIImage *image in imageArr) {
             float ratio = image.size.height/image.size.width;
@@ -48,25 +49,66 @@
             
             int x = vol*(VOLUME_OFFSET+imageViewWedth);
             CGRect rect= CGRectMake(x, y, imageViewWedth, height);
+            NSArray *rectArr = [NSArray arrayWithObjects:[NSNumber numberWithInt:x], 
+                                [NSNumber numberWithInt:y],
+                                [NSNumber numberWithInt:height],
+                                image,nil];
+            [waterfallArr addObject:rectArr];
+            
+//            if (y>self.frame.size.height) {
+//                continue;
+//            }
             
             UIImageView *imageView = [[UIImageView alloc]initWithFrame:rect];
             [imageView setImage:image];
             [self addSubview:imageView];
+            [showedImageArr addObject:imageView];
             
-            int yMax=[[volumeArr objectAtIndex:0] intValue];
-            for (int i = 0; i<[volumeArr count]; i++) {
-                if ([[volumeArr objectAtIndex:i] intValue]>y) {
-                    yMax = [[volumeArr objectAtIndex:i] intValue];
-                }
+        }
+        int yMax=[[volumeArr objectAtIndex:0] intValue];
+        for (int i = 0; i<[volumeArr count]; i++) {
+            if ([[volumeArr objectAtIndex:i] intValue]>yMax) {
+                yMax = [[volumeArr objectAtIndex:i] intValue];
             }
-            [self setContentSize:CGSizeMake(self.frame.size.width, yMax)]; 
+        }
+        [self setContentSize:CGSizeMake(self.frame.size.width, yMax)]; 
+    }
+}
+
+- (void)reloadImageViews{
+    for (UIImag eView *imageV in showedImageArr) {
+        if () {
+            
         }
     }
 }
 
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+	[self reloadImageViews];
+}
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+	[self reloadImageViews];
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#warning not use
 - (NSArray*)imageArrProcessing:(NSArray*)imageArr{
     NSMutableArray *arr = [NSMutableArray array];
     for (UIImage *image in imageArr) {
