@@ -15,6 +15,18 @@
 		268ADFC615B7B97A00E2BC0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268ADFC515B7B97A00E2BC0B /* AppDelegate.m */; };
 		268ADFC915B7B97A00E2BC0B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFC715B7B97A00E2BC0B /* MainStoryboard.storyboard */; };
 		268ADFCC15B7B97A00E2BC0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268ADFCB15B7B97A00E2BC0B /* ViewController.m */; };
+		268ADFD515B7B9D600E2BC0B /* WaterfallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268ADFD415B7B9D600E2BC0B /* WaterfallView.m */; };
+		268ADFEE15B7FDB300E2BC0B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFE415B7FDB300E2BC0B /* 1.jpg */; };
+		268ADFEF15B7FDB300E2BC0B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFE515B7FDB300E2BC0B /* 3.jpg */; };
+		268ADFF015B7FDB300E2BC0B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFE615B7FDB300E2BC0B /* 4.jpg */; };
+		268ADFF115B7FDB300E2BC0B /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFE715B7FDB300E2BC0B /* 5.jpg */; };
+		268ADFF415B7FDB300E2BC0B /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFEA15B7FDB300E2BC0B /* 8.jpg */; };
+		268ADFF515B7FDB300E2BC0B /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFEB15B7FDB300E2BC0B /* 9.jpg */; };
+		268ADFF615B7FDB300E2BC0B /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFEC15B7FDB300E2BC0B /* 10.jpg */; };
+		268ADFF715B7FDB300E2BC0B /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFED15B7FDB300E2BC0B /* 11.jpg */; };
+		268ADFF915B7FECC00E2BC0B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFF815B7FECC00E2BC0B /* 2.jpg */; };
+		268ADFFC15B7FF2300E2BC0B /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFFA15B7FF2300E2BC0B /* 6.jpg */; };
+		268ADFFD15B7FF2300E2BC0B /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 268ADFFB15B7FF2300E2BC0B /* 7.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +34,28 @@
 		268ADFB515B7B97A00E2BC0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		268ADFB715B7B97A00E2BC0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		268ADFB915B7B97A00E2BC0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		268ADFBD15B7B97A00E2BC0B /* WaterFall_demo-Info.plist */ = {isa = PBXFileReference; path = "WaterFall_demo-Info.plist"; sourceTree = "<group>"; };
+		268ADFBD15B7B97A00E2BC0B /* WaterFall_demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaterFall_demo-Info.plist"; sourceTree = "<group>"; };
 		268ADFBF15B7B97A00E2BC0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		268ADFC115B7B97A00E2BC0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		268ADFC315B7B97A00E2BC0B /* WaterFall_demo-Prefix.pch */ = {isa = PBXFileReference; path = "WaterFall_demo-Prefix.pch"; sourceTree = "<group>"; };
-		268ADFC415B7B97A00E2BC0B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		268ADFC315B7B97A00E2BC0B /* WaterFall_demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaterFall_demo-Prefix.pch"; sourceTree = "<group>"; };
+		268ADFC415B7B97A00E2BC0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		268ADFC515B7B97A00E2BC0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		268ADFC815B7B97A00E2BC0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		268ADFCA15B7B97A00E2BC0B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		268ADFCA15B7B97A00E2BC0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		268ADFCB15B7B97A00E2BC0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		268ADFD315B7B9D600E2BC0B /* WaterfallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterfallView.h; sourceTree = "<group>"; };
+		268ADFD415B7B9D600E2BC0B /* WaterfallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterfallView.m; sourceTree = "<group>"; };
+		268ADFE415B7FDB300E2BC0B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		268ADFE515B7FDB300E2BC0B /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		268ADFE615B7FDB300E2BC0B /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		268ADFE715B7FDB300E2BC0B /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		268ADFEA15B7FDB300E2BC0B /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		268ADFEB15B7FDB300E2BC0B /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		268ADFEC15B7FDB300E2BC0B /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		268ADFED15B7FDB300E2BC0B /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		268ADFF815B7FECC00E2BC0B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		268ADFFA15B7FF2300E2BC0B /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		268ADFFB15B7FF2300E2BC0B /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +102,7 @@
 		268ADFBB15B7B97A00E2BC0B /* WaterFall_demo */ = {
 			isa = PBXGroup;
 			children = (
+				268ADFD215B7B98E00E2BC0B /* Waterfall */,
 				268ADFC415B7B97A00E2BC0B /* AppDelegate.h */,
 				268ADFC515B7B97A00E2BC0B /* AppDelegate.m */,
 				268ADFC715B7B97A00E2BC0B /* MainStoryboard.storyboard */,
@@ -90,12 +116,32 @@
 		268ADFBC15B7B97A00E2BC0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				268ADFE415B7FDB300E2BC0B /* 1.jpg */,
+				268ADFF815B7FECC00E2BC0B /* 2.jpg */,
+				268ADFE515B7FDB300E2BC0B /* 3.jpg */,
+				268ADFE615B7FDB300E2BC0B /* 4.jpg */,
+				268ADFFA15B7FF2300E2BC0B /* 6.jpg */,
+				268ADFFB15B7FF2300E2BC0B /* 7.jpg */,
+				268ADFE715B7FDB300E2BC0B /* 5.jpg */,
+				268ADFEA15B7FDB300E2BC0B /* 8.jpg */,
+				268ADFEB15B7FDB300E2BC0B /* 9.jpg */,
+				268ADFEC15B7FDB300E2BC0B /* 10.jpg */,
+				268ADFED15B7FDB300E2BC0B /* 11.jpg */,
 				268ADFBD15B7B97A00E2BC0B /* WaterFall_demo-Info.plist */,
 				268ADFBE15B7B97A00E2BC0B /* InfoPlist.strings */,
 				268ADFC115B7B97A00E2BC0B /* main.m */,
 				268ADFC315B7B97A00E2BC0B /* WaterFall_demo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268ADFD215B7B98E00E2BC0B /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				268ADFD315B7B9D600E2BC0B /* WaterfallView.h */,
+				268ADFD415B7B9D600E2BC0B /* WaterfallView.m */,
+			);
+			name = Waterfall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +196,17 @@
 			files = (
 				268ADFC015B7B97A00E2BC0B /* InfoPlist.strings in Resources */,
 				268ADFC915B7B97A00E2BC0B /* MainStoryboard.storyboard in Resources */,
+				268ADFEE15B7FDB300E2BC0B /* 1.jpg in Resources */,
+				268ADFEF15B7FDB300E2BC0B /* 3.jpg in Resources */,
+				268ADFF015B7FDB300E2BC0B /* 4.jpg in Resources */,
+				268ADFF115B7FDB300E2BC0B /* 5.jpg in Resources */,
+				268ADFF415B7FDB300E2BC0B /* 8.jpg in Resources */,
+				268ADFF515B7FDB300E2BC0B /* 9.jpg in Resources */,
+				268ADFF615B7FDB300E2BC0B /* 10.jpg in Resources */,
+				268ADFF715B7FDB300E2BC0B /* 11.jpg in Resources */,
+				268ADFF915B7FECC00E2BC0B /* 2.jpg in Resources */,
+				268ADFFC15B7FF2300E2BC0B /* 6.jpg in Resources */,
+				268ADFFD15B7FF2300E2BC0B /* 7.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +220,7 @@
 				268ADFC215B7B97A00E2BC0B /* main.m in Sources */,
 				268ADFC615B7B97A00E2BC0B /* AppDelegate.m in Sources */,
 				268ADFCC15B7B97A00E2BC0B /* ViewController.m in Sources */,
+				268ADFD515B7B9D600E2BC0B /* WaterfallView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +332,7 @@
 				268ADFD115B7B97A00E2BC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
