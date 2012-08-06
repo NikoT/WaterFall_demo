@@ -10,14 +10,14 @@
 
 @interface WaterfallView : UIScrollView{
 
-    NSMutableArray *volumeArr;
+    NSMutableArray *volumeArr;  //存列数的数组
     
-    float imageViewWedth;
+    float imageViewWedth;  //瀑布流图片一列宽
     
-    NSMutableArray *waterfallArr;
+    NSMutableArray *waterfallArr;  //瀑布流所有图片的位置信息
     
-    NSMutableArray *showedImageArr;
-    NSMutableArray *cacheArr;
+    NSMutableArray *showedImageArr;// 当前显示的图片
+    NSMutableArray *cacheArr; //缓存区图片
     
 }
 - (void)addWaterfallImages:(NSArray*)imageArr;
