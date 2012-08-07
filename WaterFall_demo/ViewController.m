@@ -20,7 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    WaterfallView *w = [[WaterfallView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    WaterfallView *w = [[WaterfallView alloc]initWithFrame:CGRectMake(0, 0, 320, 400)];
     [self.view addSubview:w];
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:12];
     NSMutableArray *arr1 = [NSMutableArray arrayWithCapacity:12];
@@ -32,6 +32,12 @@
     }
     
     [w addWaterfallImages:arr];
+    [w addWaterfallImages:arr1];
+    [w addWaterfallImages:arr1];
+    [w addWaterfallImages:arr1];
+    [w addWaterfallImages:arr1];
+    [w addWaterfallImages:arr1];
+    [w addWaterfallImages:arr1];
     [w addWaterfallImages:arr1];
     
 }

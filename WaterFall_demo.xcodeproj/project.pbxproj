@@ -154,6 +154,7 @@
 				268ADFAD15B7B97A00E2BC0B /* Sources */,
 				268ADFAE15B7B97A00E2BC0B /* Frameworks */,
 				268ADFAF15B7B97A00E2BC0B /* Resources */,
+				26EA1E0715D0A4440075C8D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -211,6 +212,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26EA1E0715D0A4440075C8D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		268ADFAD15B7B97A00E2BC0B /* Sources */ = {
@@ -294,6 +311,7 @@
 		268ADFD015B7B97A00E2BC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaterFall_demo/WaterFall_demo-Prefix.pch";
 				INFOPLIST_FILE = "WaterFall_demo/WaterFall_demo-Info.plist";
@@ -305,6 +323,7 @@
 		268ADFD115B7B97A00E2BC0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaterFall_demo/WaterFall_demo-Prefix.pch";
 				INFOPLIST_FILE = "WaterFall_demo/WaterFall_demo-Info.plist";

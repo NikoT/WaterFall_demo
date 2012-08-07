@@ -10,6 +10,9 @@
 
 @interface WaterfallView : UIScrollView{
 
+    NSCondition *condition;
+    int threadCount;
+    
     NSMutableArray *volumeArr;  //存列数的数组
     
     float imageViewWedth;  //瀑布流图片一列宽
