@@ -10,4 +10,16 @@
 
 @implementation ImageLoader
 
+- (UIImage*)loadLocalImage:(NSString*)url{
+    UIImage *image = nil;
+    
+    image = [UIImage imageWithContentsOfFile:nil];
+    return image;
+}
+
+
+- (void)loadImageFromUrl:(NSString*)url{
+    
+}
+
 @end

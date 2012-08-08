@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2667E94115D2154100111C50 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2667E94015D2154100111C50 /* ImageLoader.m */; };
 		268ADFB615B7B97A00E2BC0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268ADFB515B7B97A00E2BC0B /* UIKit.framework */; };
 		268ADFB815B7B97A00E2BC0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268ADFB715B7B97A00E2BC0B /* Foundation.framework */; };
 		268ADFBA15B7B97A00E2BC0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268ADFB915B7B97A00E2BC0B /* CoreGraphics.framework */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2667E93F15D2154100111C50 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
+		2667E94015D2154100111C50 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
 		268ADFB115B7B97A00E2BC0B /* WaterFall_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFall_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268ADFB515B7B97A00E2BC0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		268ADFB715B7B97A00E2BC0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 			children = (
 				268ADFD315B7B9D600E2BC0B /* WaterfallView.h */,
 				268ADFD415B7B9D600E2BC0B /* WaterfallView.m */,
+				2667E93F15D2154100111C50 /* ImageLoader.h */,
+				2667E94015D2154100111C50 /* ImageLoader.m */,
 			);
 			name = Waterfall;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				268ADFC615B7B97A00E2BC0B /* AppDelegate.m in Sources */,
 				268ADFCC15B7B97A00E2BC0B /* ViewController.m in Sources */,
 				268ADFD515B7B9D600E2BC0B /* WaterfallView.m in Sources */,
+				2667E94115D2154100111C50 /* ImageLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
