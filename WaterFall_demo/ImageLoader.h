@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ImageLoader : NSObject
+@protocol ImageLoaderDelegate <NSObject>
 
+- (void)loaderDidFinish:(UIImage*)image WithContext:(id)context;
+
+@end
+
+@interface ImageLoader : NSObject<NSURLConnectionDelegate>{
+    id<ImageLoaderDelegate>imageLoaderDelegate;
+    
+    NSString *directory;
+    
+    NSURLConnection *connect;
+    NSMutableData *receivedDada;
+}
+@property (nonatomic , copy)NSString *directory;
+@property (nonatomic , retain)NSURLConnection *connect;
+@property (nonatomic , retain)NSMutableData *receivedDada;
+
+
+- (id)initWithDelegate:(id<ImageLoaderDelegate>)delegate;
+- (void)loadImageFromUrl:(NSString*)url;
 @end
